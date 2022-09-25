@@ -72,7 +72,8 @@ li a{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-left: none; 
-   cursor: pointer;  
+   cursor: pointer;
+   outline: none;  
 
 }
 
