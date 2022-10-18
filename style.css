@@ -8,8 +8,8 @@
     background-color: white;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
-    position: relative;   
-    overflow: hidden; 
+    position: relative; 
+    overflow: hidden;   
 }
 .toppage{
     width: 100%;
@@ -32,7 +32,7 @@ ul{
     padding: 0;
     position: absolute;
     top: 5px;
-    left: 500px;
+    left: 450px;
 }
 li{
     float: left;
@@ -40,13 +40,27 @@ li{
 li a{
     display: block;
     text-decoration: none;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     font-size: 15px;
+    font-weight: bold;
     color: black;
+    text-align: center;
+    margin-left: 30px;
+}
+.menuitem a{
+   width: 80px;
+}
+.menuitem1 a{
+    width: 100px;
+}
+.menuitem2 a{
+    width: 70px;
 }
 li a:hover{
-    color: orange;
-    transition: ease-in;
+    color: #e0924b;
+    border-bottom: 3px solid black;
+    transition: 0.2s;
 }
 .form{
     padding: 10px;
@@ -83,7 +97,7 @@ li a:hover{
 
 .body{
     width: 100%;
-    height: 65vh;
+    height: 85vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -96,9 +110,11 @@ li a:hover{
 }
 .text h1 span{
     color: #e0924b;
+    letter-spacing: 5px;
 }
 .text p{
-    font-size: 10px;
+    font-size: 15px;
+    margin-top: 20px;
     color: gray;
 }
 .butmore{
@@ -138,7 +154,7 @@ li a:hover{
     margin-left: 40px;
 }
 .image img{
-    border-radius: 150px;
+    border-radius: 50%;
     margin-right: 40px;
 }
 .image p{
@@ -185,22 +201,50 @@ li a:hover{
     font-size: 15px;
 }
 
-
-.split2 h6{
+.popular{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     position: absolute;
-    top: 12px;
+    top: 350px;
+    z-index: 1;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+
+}
+.split2{
+    
+    width: 280px;
+    height: 330px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px 2px rgba(98, 99, 99, 0.795);
+    padding: 7px;
+    margin-top: 100px;
+    position: relative;
+
+}
+.split2:hover{
+    box-shadow: 1px 1px 1px 1px gray;
+}
+.split2 h5{
+    position: absolute;
+    top: 15px;
     left: 15px;
     background-color: white;
     border-radius: 10px; 
     outline: 2px solid rgb(240, 237, 237);
     box-shadow: 1px 1px 5px 2px rgba(240, 237, 237,0.7);
-    padding: 3px;
-    font-size: 8px;
-    width: 30px;
+    padding: 3px 10px;
+    width: 60px;
 }
 
-.split2 h6 span{
+.split2 h5 span{
     color: orange;
+    font-size: 15px;
+    padding-left: 5px;
 }
 .vanilaimg{
     border-radius: 5px;
@@ -217,38 +261,6 @@ li a:hover{
     margin-left: -7px;
     opacity: 0.9;
 }
-.popular{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 300px;
-    position: absolute;
-    top: 275px;
-    z-index: 1;
-    margin-top: 30px;
-    margin-left: 40px;
-    
-
-}
-.split2{
-    width: 33.33%;
-    width: 170px;
-    height: 190px;
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 1px 2px 6px 2px rgba(98, 99, 99, 0.795);
-    padding: 7px;
-    margin-top: 100px;
-    position: relative;
-
-}
-.split2:hover{
-    box-shadow: 1px 1px 1px 1px gray;
-    background-color: lightslategray;
-    color: blue;
-
-}
 .coffe{
     display: flex;
     flex-direction: row;
@@ -261,7 +273,7 @@ li a:hover{
     margin-left: 3px;
 }
 .coffe p{
-    font-size: 10px; 
+    font-size: 15px; 
     font-weight:bold;
 }
 .bot{
@@ -273,20 +285,21 @@ li a:hover{
 .hot{
     border:1px solid #ff902a;
     border-radius: 5px;
-    width: 30px;
+    width: 40px;
     color: #ff902a;
-    font-size: 8px;
+    font-size: 12px;
     margin-left: 10px;
-    padding: 1px;
+    margin-top: 10px;
+    padding: 1px 5px;
 
 }
 .cold{
     border:1px solid #ff902a;
     border-radius: 5px;
-    width: 30px;
+    width: 40px;
     color: #ff902a;
-    font-size: 8px;
-    padding: 1px;
+    font-size: 14px;
+    padding: 1px 5px;
     margin-left: 10px;
 
 }
@@ -300,47 +313,46 @@ li a:hover{
     width: 98%;
     background-color: #ffcb7c;
     border-radius: 25px;
-    height: 180px;
-    position: absolute;
+    height: 380px;
     opacity: 0.5;
     position: absolute;
-    top: 480px;
+    top: 600px;
     margin-left: 15px;
-
 }
 .bodybottom{
         background-color: white;
         margin-left: 40px;
+
 }
 .useservice{
-    margin-top: -20px;
-    font-size: 15px;
-    font-weight: bold;
+    padding-top: 200px;
+}
+.useservice span{
+    border-bottom: 2px solid orange;
 }
 .delivery{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 140px;
-    position: absolute;
-    top: 650px;
+    margin-top: 80px;
 }
 .service{
     text-align: center;
 }
 .servicep{
-    font-size: 10px; 
+    font-size: 20px; 
     color:#2f2105; 
     font-weight: bold;
 }
 .serve{
-    font-size: 8px;
+    font-size: 12px;
+    margin-top: 10px;
 }
 .toppic{
-    position: absolute;
-    top: 950px;
-    left: 40px;
+   position: absolute;
+   top: 1400px;
+   left: 50px;
     box-shadow: 1px 2px 3px 4px rgb(194, 193, 193);
     outline: 2px solid rgb(240, 237, 237); 
     border-radius: 5px;
@@ -348,37 +360,40 @@ li a:hover{
 .textarea{
     background-color: #f6ebda;
     width: 100%;
-    height: 250px;
-    margin-top: 400px;
+    height: 350px;
+    margin-top: 350px;
+    display: flex;
 }
-
 .right{
-    margin-left: 1060px;
-    padding-top: 40px;
+    margin-left: 950px;
+    padding-top: 60px;
     align-items: center;
 }
-.right h4 span{
+.right h3 span{
     border-bottom: 2px solid orange;
 }
-
-.textarea h5{
-
+.textarea h4{
 margin-top: 15px;
 }
 .textarea p{
-    font-size: 11px;
+    font-size: 15px;
     color: rgb(65, 63, 63);
     margin-top: 10px;
 }
 .textarea button{
-    border: 1px solid rgb(19, 11, 11);
+    border: none;
     background-color: rgb(19, 11, 11);
-    padding: 5px;
+    padding: 10px;
     color: #e0924b;
-    width: 120px;
+    font-weight: bold;
     border-radius: 20px;
-    font-size: 11px;
+    font-size: 15px;
     margin-top: 15px;
+}
+.textarea button:hover{
+    background-color: #e0924b;
+    color: #2f2105;
+    transition: 1s;
 }
 .spl{
     margin-top: 70px;
@@ -388,17 +403,17 @@ margin-top: 15px;
     border-bottom: 2px solid orange;
 }
 .coffemenus{
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 320px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 100px;
     margin-top: 30px;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-bottom: 50px;
 }
 .splmenu{
-    width: 170px;
-    height: 190px;
+    width: 280px;
+    height: 330px;
     border: 1px solid white;
     background-color: white;
     border-radius: 5px;
@@ -406,11 +421,11 @@ margin-top: 15px;
     padding: 10px;
 }
 .splmenu:hover{
-    background-color: lightslategray;
+    box-shadow: 2px 3px 1px 2px gray;
     transition: 1s;
 }
 .bot p{
-    font-size: 9px; 
+    font-size: 12px; 
     color: rgb(43, 41, 41);
     margin-left: 2px;
 }
@@ -420,36 +435,34 @@ margin-top: 15px;
     background-color: #f6ebda;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    margin-top: 40px;
+    margin-top: 50px;
     height: 250px;
 }
-.textbg h4{
- padding-top: 100px;
- margin-left: 40px;
-
+.textbg h3{
+ padding-top: 80px;
+ margin-left: 20px;
 }
 .textbg p{
     margin-top: 10px;
-    font-size: 10px;
+    font-size: 12px;
     color: rgb(94, 93, 93);
-    margin-left: 40px;
-
+    margin-left: 20px;
 }
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 70px;
     position: absolute;
-    bottom: 490px;
-    right: 30px;
+    bottom: 450px;
+    right: 80px;
 }
 .commentgrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 70px;
     position: absolute;
-    bottom: 510px;
-    right: 5px;
+    bottom: 480px;
+    right: 50px;
 }
 .commentbox
 {
@@ -527,7 +540,7 @@ margin-top: 15px;
     color: white;
     text-align: center;
     align-items: center;
-    margin-left: 110px;
+    margin-left: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
