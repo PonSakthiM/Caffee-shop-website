@@ -16,15 +16,13 @@
     background-color: #f6ebda;
 }
 .navbar{
-    width: 100%;
     height: 35px;
 }
 .logo{
-   width: 20%;
    position: absolute;
    top: 5px;
    left: 30px;
-   padding: 10px;
+   padding-top: 10px;
 
 }
 ul{
@@ -47,6 +45,7 @@ li a{
     color: black;
     text-align: center;
     margin-left: 30px;
+    transition: all 0.3s ease-in;
 }
 .menuitem a{
    width: 80px;
@@ -60,41 +59,49 @@ li a{
 li a:hover{
     color: #e0924b;
     border-bottom: 3px solid black;
-    transition: 0.2s;
+    
 }
 .form{
     padding: 10px;
     position: absolute;
     top: 5px;
-    right: 20px;
+    right: 10px;
+    z-index: 1;
 }
 .form button{
-    height: 30px;
+    height: 40px;
     width: 50px;
     float: left;
+    font-size: 15px;
     background-color: white;
     border: 1px solid gray;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;  
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;  
     border-right: none;      
     color: gray;
-
 }
 .form input[type=text]{
-    height: 30px;
+    height: 40px;
     width: 150px;
     padding: 10px;
     float: left;
     background-color: white;
     border: 1px solid gray;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     border-left: none; 
    cursor: pointer;
    outline: none;  
-
 }
-
+.cir{
+    width: 10px;
+    height: 10px;
+    background-color: #ff902a;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+}
 .body{
     width: 100%;
     height: 85vh;
@@ -122,83 +129,95 @@ li a:hover{
     flex-direction: row;
     margin-top: 30px;
 }
-.butimg{
-    width: 150px;
-    border: 1px solid rgb(19, 11, 11);
+.ordernow{
     background-color: rgb(19, 11, 11);
-    padding: 15px;
-    border-radius: 20px;
-    height: 35px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
     display: flex;
+    color: white;
+    font-size: 15px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-
+    transition: all 0.5s ease-in-out;
 }
-.butimg:hover{
-    box-shadow: 1px 1px 1px 1px white;
-}
-.ordernow{
-    background-color: rgb(19, 11, 11);
-    border: 1px solid rgb(19, 11, 11);
+.ordernow span{
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #ff902a;
     color: white;
-    font-size: 12px;
-    cursor: pointer;
+    margin-left: 20px;
+}
+
+.ordernow:hover{
+    box-shadow: 2px 2px 8px 5px #2f2105;
+    background-color: #ff902a;
 }
 .more{
     color: #ff902a;
-    font-size: 12px;
+    font-size: 15px;
     border: none;   
     background-color: #f6ebda;
     margin-left: 40px;
 }
 .image img{
     border-radius: 50%;
-    margin-right: 40px;
+    margin-right: 50px;
 }
 .image p{
     background-color: white;
     border: 1px double rgb(236, 234, 234);
-    border-radius: 20px;
-    font-size: 12px;
+    border-radius: 30px;
+    font-size: 20px;
     font-weight: bold;
     box-shadow: 3px 2px 3px 2px rgba(211, 208, 208,0.5);
 }       
 .textbox{
     position: absolute;
-    right: 170px;
+    right: 240px;
     top: 10px;
-    width: 130px;
-    padding: 3px;
+    width: 180px;
+    padding: 10px;
     text-align: center;
     outline: 2px solid rgb(240, 237, 237); 
 }
 .rating{
     position: absolute;
     right: 30px;
-    top: 40px;
-    padding: 3px;
+    top: 60px;
+    padding: 10px;
     text-align: center;
     border-radius: 10px;
-    width: 60px;
-    outline: 2px solid rgb(240, 237, 237);
+    width: 100px;
+    outline: 2px solid rgb(240, 2376 237);
+}
+.rating span{
+    color: orange;
 }
 .likes{
     position: absolute;
-    right: 250px;
-    top: 170px;
-    padding: 3px;
+    right: 330px;
+    top: 240px;
+    padding: 10px;
     text-align: center;
-    width: 55px;
+    width: 90px;
     outline: 2px solid rgb(240, 237, 237);
 }
 
 .populartext{
     position: absolute;
-    top: 350px;
+    top: 380px;
     left: 40px;
-    font-size: 15px;
+    font-size: 20px;
+}
+.populartext span{
+    border-bottom: 4px solid orange;
 }
 
 .popular{
@@ -209,8 +228,7 @@ li a:hover{
     top: 350px;
     z-index: 1;
     margin-top: 30px;
-    margin-left: 30px;
-    
+    margin-left: 25px;    
 
 }
 .split2{
@@ -257,7 +275,7 @@ li a:hover{
 }
 
 .hotcold{
-    margin-top: -5px;
+    margin-top: -2px;
     margin-left: -7px;
     opacity: 0.9;
 }
@@ -281,6 +299,15 @@ li a:hover{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 5px;
+}
+.bot span{
+    width: 30px;
+    height: 30px;
+    background-color: #ff902a;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
 }
 .hot{
     border:1px solid #ff902a;
@@ -317,7 +344,7 @@ li a:hover{
     opacity: 0.5;
     position: absolute;
     top: 600px;
-    margin-left: 15px;
+    left: 15px;
 }
 .bodybottom{
         background-color: white;
@@ -361,11 +388,16 @@ li a:hover{
     background-color: #f6ebda;
     width: 100%;
     height: 350px;
-    margin-top: 350px;
+    margin-top: 300px;
     display: flex;
+    justify-content: space-between;
 }
 .right{
-    margin-left: 950px;
+    background-image: url(./images/Exclude1.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 70% 100%;
+    padding-left: 950px;
     padding-top: 60px;
     align-items: center;
 }
@@ -380,20 +412,21 @@ margin-top: 15px;
     color: rgb(65, 63, 63);
     margin-top: 10px;
 }
-.textarea button{
+.right button{
     border: none;
     background-color: rgb(19, 11, 11);
     padding: 10px;
-    color: #e0924b;
+    color: #ff902a;
     font-weight: bold;
     border-radius: 20px;
     font-size: 15px;
     margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
-.textarea button:hover{
-    background-color: #e0924b;
+.right button:hover{
+    background-color: #ff902a;
     color: #2f2105;
-    transition: 1s;
 }
 .spl{
     margin-top: 70px;
@@ -408,8 +441,8 @@ margin-top: 15px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 100px;
     margin-top: 30px;
-    margin-left: 20px;
     margin-bottom: 50px;
+    margin-left: 40px;
 }
 .splmenu{
     width: 280px;
@@ -429,8 +462,11 @@ margin-top: 15px;
     color: rgb(43, 41, 41);
     margin-left: 2px;
 }
-
 .textbg{
+    background-image: url(./images/Exclude1.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% 100%;
     width: 77%;
     background-color: #f6ebda;
     border-bottom-right-radius: 10px;
@@ -453,7 +489,7 @@ margin-top: 15px;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 70px;
     position: absolute;
-    bottom: 450px;
+    bottom: 480px;
     right: 80px;
 }
 .commentgrid{
@@ -461,7 +497,7 @@ margin-top: 15px;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 70px;
     position: absolute;
-    bottom: 480px;
+    bottom: 500px;
     right: 50px;
 }
 .commentbox
@@ -491,7 +527,7 @@ margin-top: 15px;
 .bottom p{
     font-size: 20px;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     word-spacing: 3px;
     padding-top: 150px;
 }
@@ -500,7 +536,6 @@ margin-top: 15px;
     width: 300px;
     border-radius: 20px;
     background-color: white;
-    border: 1px solid black;
     margin-left: 410px;
     height: 40px;
     padding-top: 5px;
@@ -510,17 +545,16 @@ margin-top: 15px;
 .form1 input{
     border: none;
     font-size: 10px;
-    margin-left: 0;
-    width: 80px;
+    width: 120px;
     padding: 5px;
     background-color: white;
     outline: none;
 
 }
 .form1 button{
-    border: 1px solid rgb(19, 11, 11);
     background-color: rgb(19, 11, 11);
     color: white;
+    border: none;
     width: 80px;
     height: 30px;
     border-radius: 20px;
@@ -529,8 +563,15 @@ margin-top: 15px;
     opacity: 0.8;    
     padding: 5px;
     text-align: center;
-    margin-left: 100px;
+    margin-left: 70px;    
     margin-bottom: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.form1 button:hover{
+    background-color: #ff902a;
+    color: #2f2105;
+
 }
 .bottom{
     background-image: url(./images/bgimage.png);
@@ -540,31 +581,19 @@ margin-top: 15px;
     color: white;
     text-align: center;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 .seeds{
     position: absolute;
     top: 280px;
-    left: 40px;
+    left: 60px;
     rotate: 210deg;
 }
 .seeds1{
     position: absolute;
     top: 20px;
-    right: 10px;
+    right: 50px;
     rotate: 220deg;
-
-}
-.bgimg1{
-    position: absolute;
-    bottom: 450px;
-    opacity: 0.9;
-}
-.bgimg2{
-    position: absolute;
-    top: 1115px;
-    right: 0;
-    opacity: 0.9;
 }
