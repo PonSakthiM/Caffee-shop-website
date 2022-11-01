@@ -60,12 +60,12 @@ li a:hover {
     padding: 10px;
     position: absolute;
     top: 5px;
-    right: 10px;
+    right: 20px;
     z-index: 1;
 }
 .form button {
     height: 40px;
-    width: 50px;
+    width: 40px;
     float: left;
     font-size: 15px;
     background-color: white;
@@ -77,7 +77,7 @@ li a:hover {
 }
 .form input[type=text] {
     height: 40px;
-    width: 150px;
+    width: 250px;
     padding: 10px;
     float: left;
     background-color: white;
@@ -87,6 +87,9 @@ li a:hover {
     border-left: none;
     cursor: pointer;
     outline: none;
+}
+.shopi{
+    margin-left: 10px;
 }
 .cir {
     width: 10px;
