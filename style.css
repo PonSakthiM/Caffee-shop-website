@@ -8,22 +8,20 @@
     background-color: white;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
-    position: relative; 
-    overflow: hidden;   
+    position: relative;  
 }
 .toppage{
     width: 100%;
     background-color: #f6ebda;
 }
 .navbar{
-    height: 35px;
+    height: 5vh;
 }
 .logo{
    position: absolute;
    top: 5px;
    left: 30px;
    padding-top: 10px;
-
 }
 ul{
     list-style-type: none;
@@ -104,7 +102,7 @@ li a:hover{
 }
 .body{
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -113,7 +111,7 @@ li a:hover{
 }
 .text{
     margin-top: 10px;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 .text h1 span{
     color: #e0924b;
@@ -213,7 +211,7 @@ li a:hover{
 .populartext{
     position: absolute;
     top: 380px;
-    left: 40px;
+    left: 30px;
     font-size: 20px;
 }
 .populartext span{
@@ -348,11 +346,10 @@ li a:hover{
 }
 .bodybottom{
         background-color: white;
-        margin-left: 40px;
-
+        margin-left: 30px;
 }
 .useservice{
-    padding-top: 200px;
+    padding-top: 100px;
 }
 .useservice span{
     border-bottom: 2px solid orange;
@@ -362,7 +359,7 @@ li a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .service{
     text-align: center;
@@ -378,8 +375,8 @@ li a:hover{
 }
 .toppic{
    position: absolute;
-   top: 1400px;
-   left: 50px;
+   top: 1350px;
+   left: 30px;
     box-shadow: 1px 2px 3px 4px rgb(194, 193, 193);
     outline: 2px solid rgb(240, 237, 237); 
     border-radius: 5px;
@@ -387,7 +384,7 @@ li a:hover{
 .textarea{
     background-color: #f6ebda;
     width: 100%;
-    height: 350px;
+    height: 60vh;
     margin-top: 300px;
     display: flex;
     justify-content: space-between;
@@ -401,11 +398,15 @@ li a:hover{
     padding-top: 60px;
     align-items: center;
 }
+.right h3{
+    font-size: 25px;
+}
 .right h3 span{
     border-bottom: 2px solid orange;
 }
 .textarea h4{
 margin-top: 15px;
+font-size: 20px;
 }
 .textarea p{
     font-size: 15px;
@@ -429,8 +430,8 @@ margin-top: 15px;
     color: #2f2105;
 }
 .spl{
-    margin-top: 70px;
-    margin-left: 40px;
+    margin-top: 50px;
+    margin-left: 30px;
 }
 .spl span{
     border-bottom: 2px solid orange;
@@ -442,7 +443,7 @@ margin-top: 15px;
     row-gap: 100px;
     margin-top: 30px;
     margin-bottom: 50px;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 .splmenu{
     width: 280px;
@@ -472,15 +473,16 @@ margin-top: 15px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     margin-top: 50px;
-    height: 250px;
+    height: 50vh;
 }
 .textbg h3{
  padding-top: 80px;
  margin-left: 20px;
+ font-size: 25px;
 }
 .textbg p{
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 15px;
     color: rgb(94, 93, 93);
     margin-left: 20px;
 }
@@ -576,7 +578,7 @@ margin-top: 15px;
 .bottom{
     background-image: url(./images/bgimage.png);
     width: 85%;
-    height: 350px;
+    height: 60vh;
     border-radius: 20px;
     color: white;
     text-align: center;
