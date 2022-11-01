@@ -1,40 +1,37 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
 }
-.container{
+.container {
     background-color: white;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
-    position: relative;  
-    overflow: hidden;
+    position: relative;
 }
-.toppage{
-    width: 100%;
+.toppage {
     background-color: #f6ebda;
 }
-.navbar{
+.navbar {
     height: 5vh;
 }
-.logo{
-   position: absolute;
-   top: 5px;
-   left: 30px;
-   padding-top: 10px;
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    padding-top: 10px;
 }
-ul{
+ul {
     list-style-type: none;
     padding: 0;
     position: absolute;
     top: 5px;
     left: 450px;
 }
-li{
+li {
     float: left;
 }
-li a{
+li a {
     display: block;
     text-decoration: none;
     padding-top: 10px;
@@ -46,28 +43,27 @@ li a{
     margin-left: 30px;
     transition: all 0.3s ease-in;
 }
-.menuitem a{
-   width: 80px;
+.menuitem a {
+    width: 80px;
 }
-.menuitem1 a{
+.menuitem1 a {
     width: 100px;
 }
-.menuitem2 a{
+.menuitem2 a {
     width: 70px;
 }
-li a:hover{
+li a:hover {
     color: #e0924b;
     border-bottom: 3px solid black;
-    
 }
-.form{
+.form {
     padding: 10px;
     position: absolute;
     top: 5px;
     right: 10px;
     z-index: 1;
 }
-.form button{
+.form button {
     height: 40px;
     width: 50px;
     float: left;
@@ -75,11 +71,11 @@ li a:hover{
     background-color: white;
     border: 1px solid gray;
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;  
-    border-right: none;      
+    border-bottom-left-radius: 20px;
+    border-right: none;
     color: gray;
 }
-.form input[type=text]{
+.form input[type=text] {
     height: 40px;
     width: 150px;
     padding: 10px;
@@ -88,11 +84,11 @@ li a:hover{
     border: 1px solid gray;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border-left: none; 
-   cursor: pointer;
-   outline: none;  
+    border-left: none;
+    cursor: pointer;
+    outline: none;
 }
-.cir{
+.cir {
     width: 10px;
     height: 10px;
     background-color: #ff902a;
@@ -101,34 +97,33 @@ li a:hover{
     right: 10px;
     border-radius: 50%;
 }
-.body{
-    width: 100%;
+.body {
     height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: relative;    
+    position: relative;
     margin-top: 60px;
 }
-.text{
+.text {
     margin-top: 10px;
     margin-left: 30px;
 }
-.text h1 span{
+.text h1 span {
     color: #e0924b;
     letter-spacing: 5px;
 }
-.text p{
+.text p {
     font-size: 15px;
     margin-top: 20px;
     color: gray;
 }
-.butmore{
+.butmore {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
 }
-.ordernow{
+.ordernow {
     background-color: rgb(19, 11, 11);
     padding: 10px 20px;
     border-radius: 30px;
@@ -142,7 +137,7 @@ li a:hover{
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
-.ordernow span{
+.ordernow span {
     font-size: 15px;
     width: 30px;
     height: 30px;
@@ -153,40 +148,39 @@ li a:hover{
     color: white;
     margin-left: 20px;
 }
-
-.ordernow:hover{
+.ordernow:hover {
     box-shadow: 2px 2px 8px 5px #2f2105;
     background-color: #ff902a;
 }
-.more{
+.more {
     color: #ff902a;
     font-size: 15px;
-    border: none;   
+    border: none;
     background-color: #f6ebda;
     margin-left: 40px;
 }
-.image img{
+.image img {
     border-radius: 50%;
     margin-right: 50px;
 }
-.image p{
+.image p {
     background-color: white;
     border: 1px double rgb(236, 234, 234);
     border-radius: 30px;
     font-size: 20px;
     font-weight: bold;
-    box-shadow: 3px 2px 3px 2px rgba(211, 208, 208,0.5);
-}       
-.textbox{
+    box-shadow: 3px 2px 3px 2px rgba(211, 208, 208, 0.5);
+}
+.textbox {
     position: absolute;
     right: 240px;
     top: 10px;
     width: 180px;
     padding: 10px;
     text-align: center;
-    outline: 2px solid rgb(240, 237, 237); 
+    outline: 2px solid rgb(240, 237, 237);
 }
-.rating{
+.rating {
     position: absolute;
     right: 30px;
     top: 60px;
@@ -196,10 +190,10 @@ li a:hover{
     width: 100px;
     outline: 2px solid rgb(240, 2376 237);
 }
-.rating span{
+.rating span {
     color: orange;
 }
-.likes{
+.likes {
     position: absolute;
     right: 330px;
     top: 240px;
@@ -208,30 +202,26 @@ li a:hover{
     width: 90px;
     outline: 2px solid rgb(240, 237, 237);
 }
-
-.populartext{
+.populartext {
     position: absolute;
     top: 380px;
     left: 30px;
     font-size: 20px;
 }
-.populartext span{
+.populartext span {
     border-bottom: 4px solid orange;
 }
-
-.popular{
-    width: 100%;
+.popular {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px;
     position: absolute;
     top: 350px;
     z-index: 1;
     margin-top: 30px;
-    margin-left: 25px;    
-
+    margin-left: 30px;
 }
-.split2{
-    
+.split2 {
     width: 280px;
     height: 330px;
     border: 1px solid white;
@@ -241,65 +231,61 @@ li a:hover{
     padding: 7px;
     margin-top: 100px;
     position: relative;
-
 }
-.split2:hover{
+.split2:hover {
     box-shadow: 1px 1px 1px 1px gray;
 }
-.split2 h5{
+.split2 h5 {
     position: absolute;
     top: 15px;
     left: 15px;
     background-color: white;
-    border-radius: 10px; 
+    border-radius: 10px;
     outline: 2px solid rgb(240, 237, 237);
-    box-shadow: 1px 1px 5px 2px rgba(240, 237, 237,0.7);
+    box-shadow: 1px 1px 5px 2px rgba(240, 237, 237, 0.7);
     padding: 3px 10px;
     width: 60px;
 }
-
-.split2 h5 span{
+.split2 h5 span {
     color: orange;
     font-size: 15px;
     padding-left: 5px;
 }
-.vanilaimg{
+.vanilaimg {
     border-radius: 5px;
     margin-left: 2px;
 }
-
-.haze{
+.haze {
     border-radius: 5px;
     margin-left: 2px;
 }
-
-.hotcold{
+.hotcold {
     margin-top: -2px;
     margin-left: -7px;
     opacity: 0.9;
 }
-.coffe{
+.coffe {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 5px;
 }
-.coffe h6{
-    color:#2f2105; 
+.coffe h6 {
+    color: #2f2105;
     font-size: 12px;
     margin-left: 3px;
 }
-.coffe p{
-    font-size: 15px; 
-    font-weight:bold;
+.coffe p {
+    font-size: 15px;
+    font-weight: bold;
 }
-.bot{
+.bot {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 5px;
 }
-.bot span{
+.bot span {
     width: 30px;
     height: 30px;
     background-color: #ff902a;
@@ -308,8 +294,8 @@ li a:hover{
     color: white;
     padding: 5px;
 }
-.hot{
-    border:1px solid #ff902a;
+.hot {
+    border: 1px solid #ff902a;
     border-radius: 5px;
     width: 40px;
     color: #ff902a;
@@ -317,25 +303,22 @@ li a:hover{
     margin-left: 10px;
     margin-top: 10px;
     padding: 1px 5px;
-
 }
-.cold{
-    border:1px solid #ff902a;
+.cold {
+    border: 1px solid #ff902a;
     border-radius: 5px;
     width: 40px;
     color: #ff902a;
     font-size: 12px;
     padding: 1px 5px;
     margin-left: 10px;
-
 }
-.center{
-    width: 100%;
+.center {
     z-index: 1;
     background-color: white;
     margin-top: 200px;
 }
-.rectangle{
+.rectangle {
     width: 98%;
     background-color: #ffcb7c;
     border-radius: 25px;
@@ -345,52 +328,50 @@ li a:hover{
     top: 600px;
     left: 15px;
 }
-.bodybottom{
-        background-color: white;
-        margin-left: 30px;
+.bodybottom {
+    background-color: white;
+    margin-left: 30px;
 }
-.useservice{
+.useservice {
     padding-top: 100px;
 }
-.useservice span{
+.useservice span {
     border-bottom: 2px solid orange;
 }
-.delivery{
-    width: 100%;
+.delivery {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 50px;
 }
-.service{
+.service {
     text-align: center;
 }
-.servicep{
-    font-size: 20px; 
-    color:#2f2105; 
+.servicep {
+    font-size: 20px;
+    color: #2f2105;
     font-weight: bold;
 }
-.serve{
+.serve {
     font-size: 12px;
     margin-top: 10px;
 }
-.toppic{
-   position: absolute;
-   top: 1350px;
-   left: 30px;
+.toppic {
+    position: absolute;
+    top: 1350px;
+    left: 30px;
     box-shadow: 1px 2px 3px 4px rgb(194, 193, 193);
-    outline: 2px solid rgb(240, 237, 237); 
+    outline: 2px solid rgb(240, 237, 237);
     border-radius: 5px;
 }
-.textarea{
+.textarea {
     background-color: #f6ebda;
-    width: 100%;
     height: 60vh;
     margin-top: 300px;
     display: flex;
     justify-content: space-between;
 }
-.right{
+.right {
     background-image: url(./images/Exclude1.png);
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -399,22 +380,22 @@ li a:hover{
     padding-top: 60px;
     align-items: center;
 }
-.right h3{
+.right h3 {
     font-size: 25px;
 }
-.right h3 span{
+.right h3 span {
     border-bottom: 2px solid orange;
 }
-.textarea h4{
-margin-top: 15px;
-font-size: 20px;
+.textarea h4 {
+    margin-top: 15px;
+    font-size: 20px;
 }
-.textarea p{
+.textarea p {
     font-size: 15px;
     color: rgb(65, 63, 63);
     margin-top: 10px;
 }
-.right button{
+.right button {
     border: none;
     background-color: rgb(19, 11, 11);
     padding: 10px;
@@ -426,45 +407,44 @@ font-size: 20px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
-.right button:hover{
+.right button:hover {
     background-color: #ff902a;
     color: #2f2105;
 }
-.spl{
+.spl {
     margin-top: 50px;
     margin-left: 30px;
 }
-.spl span{
+.spl span {
     border-bottom: 2px solid orange;
 }
-.coffemenus{
-    width: 100%;
+.coffemenus {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 100px;
+    gap: 50px;
     margin-top: 30px;
     margin-bottom: 50px;
     margin-left: 30px;
 }
-.splmenu{
+.splmenu {
     width: 280px;
     height: 330px;
     border: 1px solid white;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 1px 2px 6px 2px rgba(98, 99, 99, 0.795);;
+    box-shadow: 1px 2px 6px 2px rgba(98, 99, 99, 0.795); 
     padding: 10px;
 }
-.splmenu:hover{
+.splmenu:hover {
     box-shadow: 2px 3px 1px 2px gray;
     transition: 1s;
 }
-.bot p{
-    font-size: 12px; 
+.bot p {
+    font-size: 12px;
     color: rgb(43, 41, 41);
     margin-left: 2px;
 }
-.textbg{
+.textbg {
     background-image: url(./images/Exclude1.png);
     background-repeat: no-repeat;
     background-position: left top;
@@ -476,12 +456,12 @@ font-size: 20px;
     margin-top: 50px;
     height: 50vh;
 }
-.textbg h3{
- padding-top: 80px;
- margin-left: 20px;
- font-size: 25px;
+.textbg h3 {
+    padding-top: 80px;
+    margin-left: 20px;
+    font-size: 25px;
 }
-.textbg p{
+.textbg p {
     margin-top: 10px;
     font-size: 15px;
     color: rgb(94, 93, 93);
@@ -492,50 +472,44 @@ font-size: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 70px;
     position: absolute;
-    bottom: 480px;
+    bottom: 500px;
     right: 80px;
 }
-.commentgrid{
+.commentgrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 70px;
     position: absolute;
-    bottom: 500px;
-    right: 50px;
+    bottom: 520px;
+    right: 40px;
 }
-.commentbox
-{
-    width: 130px;
-    height: 40px;
+.commentbox {
     border-radius: 1px solid #ffcb7c;
     background-color: #ffcb7c;
     box-shadow: 2px 3px 4px 3px #ffcb7c;
     border-radius: 5px;
-    padding-bottom: 15px;
-    padding-left: 7px;
+    padding:0px 10px 5px 5px;
     text-align: left;
     opacity: 0.9;
     outline: 2px solid #ffcb7c;
-
 }
-.comments{
+.comments {
     color: rgb(43, 42, 42);
-    font-size:7px;
-}
-.name{
-
     font-size: 10px;
+}
+.name {
+    font-size: 12px;
     font-weight: bold;
 }
-.bottom p{
+
+.bottom p {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
     word-spacing: 3px;
     padding-top: 150px;
 }
-.form1{
-
+.form1 {
     width: 300px;
     border-radius: 20px;
     background-color: white;
@@ -545,16 +519,15 @@ font-size: 20px;
     margin-top: 20px;
     padding-left: 15px;
 }
-.form1 input{
+.form1 input {
     border: none;
     font-size: 10px;
     width: 120px;
     padding: 5px;
     background-color: white;
     outline: none;
-
 }
-.form1 button{
+.form1 button {
     background-color: rgb(19, 11, 11);
     color: white;
     border: none;
@@ -563,20 +536,19 @@ font-size: 20px;
     border-radius: 20px;
     font-size: 10px;
     font-weight: bold;
-    opacity: 0.8;    
+    opacity: 0.8;
     padding: 5px;
     text-align: center;
-    margin-left: 70px;    
+    margin-left: 70px;
     margin-bottom: 5px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
-.form1 button:hover{
+.form1 button:hover {
     background-color: #ff902a;
     color: #2f2105;
-
 }
-.bottom{
+.bottom {
     background-image: url(./images/bgimage.png);
     width: 85%;
     height: 60vh;
@@ -588,13 +560,13 @@ font-size: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.seeds{
+.seeds {
     position: absolute;
     top: 280px;
     left: 60px;
     rotate: 210deg;
 }
-.seeds1{
+.seeds1 {
     position: absolute;
     top: 20px;
     right: 50px;
